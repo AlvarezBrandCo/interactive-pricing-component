@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Manrope";
-  src: url("/fonts/Manrope-VariableFont_wght.ttf") format("ttf"); }
+  src: url("../fonts/Manrope-VariableFont_wght.ttf") format("ttf"); }
 
 .range-wrap {
   flex: 0 0 100%;
