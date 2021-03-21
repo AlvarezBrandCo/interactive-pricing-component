@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body onresize="resize()">
+    <div class="main">
+      <div class="container">
+        <header>
+          <h1>Simple, traffic-based pricing.</h1>
+          <span class="line">Sign up for our 30 day trial.</span> <span class="line">No credit card required.</span>
+        </header>
+        <div class="box">
+          <div class="price-wrap">
+            <p>100K PAGEVIEWS</p>
+            <p><span class="price" id="price"></span> / month</p>
+            <div class="range-wrap">
+              <input
+                class="price-slider"
+                id="slider"
+                type="range"
+                max="4"
+                step="1"
+                onChange="getSliderVal()"/>
+            </div>
+          </div>
+          <div class="toggle-wrap">
+            <div>Monthly Billing</div>
+            <label class="toggle">
+              <input
+                type="checkbox"
+                id="toggle"
+                onChange="getSliderVal()">
+              <span class="toggle-slider round"></span>
+            </label>
+            <div>Yearly Billing</div>
+            <span class="discount-tag" id="discount-tag"></span>
+          </div>
+          <div class="start-trial">
+            <div>
+              <ul>
+                <li>Unlimited websites</li>
+                <li>100% data ownership </li>
+                <li>Email reports</li>
+              </ul>
+            </div>
+            <div>
+              <button class="button">Start my trial</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script rel="javscript" src="js/main.js"></script>
+</html>

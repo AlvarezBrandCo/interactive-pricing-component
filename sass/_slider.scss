@@ -1,0 +1,105 @@
+.range-wrap {
+    flex: 0 0 100%;
+    margin-top:20px
+}
+
+
+.price-slider {
+    background: linear-gradient(to right, $Soft-Cyan 0%, $Soft-Cyan 50%, $Light-Grayish-Blue 50%, $Light-Grayish-Blue 100%);
+    border-radius: 8px;
+    height: 7px;
+    width: 100%;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+    }
+    &:focus {
+        outline: none;
+    }
+    &::-ms-track {
+        width: 100%;
+        cursor: pointer;
+        background: transparent; 
+        border-color: transparent;
+        color: transparent;
+    }
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color:$Strong-Cyan;
+        background-position:center;
+        background-repeat:no-repeat;
+        background-image:url("../images/icon-slider.svg");
+        cursor: pointer;
+        margin-top: -16px;
+        box-shadow: 0 15px 30px $Strong-Cyan;
+        border:none;
+        &:hover {
+            background-color:mix($Strong-Cyan, $White, 70%)
+        }
+        &:active {
+            background-color:mix($Strong-Cyan, #000, 70%)
+        }
+    }
+    &::-moz-range-thumb {
+        -webkit-appearance: none;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color:$Strong-Cyan;
+        background-position:center;
+        background-repeat:no-repeat;
+        background-image:url("../images/icon-slider.svg");
+        cursor: pointer;
+        margin-top: -16px; 
+        border:none;
+        box-shadow: 0 15px 30px $Strong-Cyan;
+        &:hover {
+            background-color:mix($Strong-Cyan, $White, 70%)
+        }
+        &:active {
+            background-color:mix($Strong-Cyan, #000, 70%)
+        }
+    }
+    &::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 8.4px;
+        cursor: pointer;
+        border-radius: 1.3px;
+    }
+    &:focus::-webkit-slider-runnable-track {
+    }
+    &::-moz-range-track {
+        width: 100%;
+        height: 8.4px;
+        cursor: pointer;
+        border-radius: 1.3px;
+    }
+}
+
+
+@media (max-width: 475px) {
+    .price-slider {
+        text-align:center;
+    }
+    .price-wrap {
+        p:nth-child(1) {
+            text-align:center;
+            flex:1 0 0
+        }
+        p:nth-child(2) {
+            order: 2;
+            flex:1 0 0;
+            margin-top:40px
+        }
+    }
+    .range-wrap {
+        flex: 0 0 100%;
+        margin-top:20px;
+        order: 1;
+    }
+}
