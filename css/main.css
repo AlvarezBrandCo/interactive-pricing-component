@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "Manrope";
-  src: url("../fonts/Manrope-VariableFont_wght.ttf") format("ttf"); }
-
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 .range-wrap {
   flex: 0 0 100%;
   margin-top: 20px; }
@@ -152,7 +149,7 @@ input:checked + .toggle-slider:before {
     margin: 10px auto 10px; } }
 
 body {
-  font-family: "Manrope";
+  font-family: 'Manrope', sans-serif;
   color: #858fad; }
 
 .attribution {
