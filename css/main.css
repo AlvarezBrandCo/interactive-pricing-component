@@ -152,7 +152,7 @@ input:checked + .toggle-slider:before {
     margin: 10px auto 10px; } }
 
 body {
-  font-family: Manrope;
+  font-family: "Manrope";
   color: #858fad; }
 
 .attribution {
